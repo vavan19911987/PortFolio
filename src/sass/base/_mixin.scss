@@ -1,32 +1,13 @@
 // ===================================================ШРИФТЫ====================================================================================================================
-// @mixin thin {
-// 	font-family: '', sans-serif;    
-// 	font-weight: 100;
-// }
-// @mixin light {
-// 	font-family: '', sans-serif;    
-// 	font-weight: 300;
-// }
-// @mixin reg {
-// 	font-family: '', sans-serif;    
-// 	font-weight: 400;
-// }
-@mixin med {
-	font-family: 'Poppins-Medium', sans-serif;
+@mixin med() {
+	font-family: "Poppins-Medium", sans-serif;
 	font-weight: 500;
 }
-// @mixin sem {
-// 	font-family: '', sans-serif;
-// 	font-weight: 600;
-// }
-@mixin bold {
-	font-family: 'Poppins', sans-serif;
+
+@mixin bold() {
+	font-family: "Poppins", sans-serif;
 	font-weight: 700;
 }
-// @mixin black {
-// 	font-family: '', sans-serif;
-// 	font-weight: 900;
-// }
 // ========ПРИМЕР=======
 // @mixin reg-(сокращение от название) {
 // 	font-family: 'Название шрифта', sans-serif;
@@ -34,3 +15,18 @@
 //		font-style: ставим подходящие значение;
 // }
 
+// ======================================================CIRCLE=================================================================================================================
+
+@mixin before_circle {
+	&:before {
+		content: "";
+		position: absolute;
+		width: 36px;
+		height: 36px;
+		top: -30%;
+		left: 0;
+		z-index: -1;
+		border-radius: 50%;
+		background: $color-green;
+	}
+}

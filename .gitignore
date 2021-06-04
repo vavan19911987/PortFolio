@@ -9,6 +9,10 @@
 /src/mailer
 /dist/mailer
 
+#прочие
+/заметки
+/заметки
+
 # testing
 /coverage
 
