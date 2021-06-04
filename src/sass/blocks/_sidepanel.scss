@@ -27,7 +27,20 @@
 }
 
 .sidepanel__link {
+    transform: rotate(-90deg);
+    &:nth-child(2) {
+        transform: rotate(0deg);
+    }
     img {
         width: 20px;
     }
 }
+.icon-vk1 {
+    color: white;
+}
+.icon-instagram {
+    color: white;
+  }
+  .icon-whatsapp {
+    color: white;
+  }
