@@ -3,11 +3,11 @@
 
 @font-face {
     font-family: 'icomoon';
-    src:  url('../../fonts/icomoon.eot?6hqk15');
-    src:  url('../../fonts/icomoon.eot?6hqk15#iefix') format('embedded-opentype'),
-      url('../../fonts/icomoon.ttf?6hqk15') format('truetype'),
-      url('../../fonts/icomoon.woff?6hqk15') format('woff'),
-      url('../../fonts/icomoon.svg?6hqk15#icomoon') format('svg');
+    src:  url('../fonts/icomoon.eot?6hqk15');
+    src:  url('../fonts/icomoon.eot?6hqk15#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?6hqk15') format('truetype'),
+      url('../fonts/icomoon.woff?6hqk15') format('woff'),
+      url('../fonts/icomoon.svg?6hqk15#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: block;
@@ -33,24 +33,18 @@
   
   .icon-vk1:before {
     content: "\e901";
-    color: white;
-
   }
   .icon-briefcase:before {
     content: "\e9ae";
-    color: white;
   }
   .icon-instagram:before {
     content: "\ea92";
-    color: white;
   }
   .icon-whatsapp:before {
     content: "\ea93";
-    color: white;
   }
   .icon-telegram:before {
     content: "\ea95";
-    color: white;
   }
   
 
