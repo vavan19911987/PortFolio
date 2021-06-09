@@ -28,18 +28,27 @@ window.addEventListener('DOMContentLoaded', function () {
           menu = document.querySelector('.menu'),
           close = document.querySelector('.menu__close'),
           arrowUp = document.querySelector('.arrow-up'),
-          arrowDown = document.querySelector('.arrow-down');
+          arrowDown = document.querySelector('.arrow-down'),
+          containers = document.querySelector('.nones'),
+          sidepanel = document.querySelector('.sidepanel'),
+          hamburgers = document.querySelector('.hamburger');
 
     hamburger.addEventListener('click', function () {
         menu.classList.add('active');
         arrowUp.classList.add('none');
         arrowDown.classList.add('none');
+        containers.classList.add('none');
+        sidepanel.classList.add('none');
+        hamburgers.classList.add('none');
 
     });
     close.addEventListener('click', function () {
         menu.classList.remove('active');
         arrowUp.classList.remove('none');
         arrowDown.classList.remove('none');
+        containers.classList.remove('none');
+        sidepanel.classList.remove('none');
+        hamburgers.classList.remove('none');
     });
 
     
