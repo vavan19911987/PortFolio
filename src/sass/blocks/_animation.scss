@@ -3,6 +3,9 @@
     bottom: 40px;
     left: 50%;
     margin: 30px;
+    &.none {
+        display: none;
+    }
 }
 .arrow-down {
     span {
@@ -40,14 +43,17 @@
     }
 }
 
-
 .arrow-up {
     position: absolute;
     top: 65px;
     right: 18px;
     margin: 30px;
     transform: rotate(180deg);
+    &.none {
+        display: none;
+    }
 }
+
 .arrow-up {
     span {
         display: block;

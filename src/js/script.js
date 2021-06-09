@@ -24,6 +24,26 @@ window.addEventListener('DOMContentLoaded', function () {
             this.setAttribute("style", "background:none;");
         });
     }
+    const hamburger = document.querySelector('.hamburger'),
+          menu = document.querySelector('.menu'),
+          close = document.querySelector('.menu__close'),
+          arrowUp = document.querySelector('.arrow-up'),
+          arrowDown = document.querySelector('.arrow-down');
+
+    hamburger.addEventListener('click', function () {
+        menu.classList.add('active');
+        arrowUp.classList.add('none');
+        arrowDown.classList.add('none');
+
+    });
+    close.addEventListener('click', function () {
+        menu.classList.remove('active');
+        arrowUp.classList.remove('none');
+        arrowDown.classList.remove('none');
+    });
+
+    
+
 
 });
 
