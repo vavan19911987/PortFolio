@@ -1,3 +1,4 @@
+// others
 @import 'libs/mynormalize';
 @import 'base/fonts';
 @import 'base/colors';
@@ -6,7 +7,7 @@
 
 
 
-
+// blocks
 @import 'blocks/promo';
 @import 'blocks/title';
 @import 'blocks/buttons';
@@ -14,3 +15,12 @@
 @import 'blocks/animation';
 @import 'blocks/hamburger';
 @import 'blocks/menu';
+
+// media
+@import 'media/interfase';
+@import 'media/buttons';
+@import 'media/hamsburger';
+@import 'media/menu';
+@import 'media/promo';
+@import 'media/sidepanel';
+@import 'media/title';
