@@ -69,15 +69,15 @@
 @media (max-width: 500px) {
     .promo {
         &__title {
-            font-size: 30px;
+            font-size: 25px;
             line-height: 50px;
             left: -40px;
         }
         &__subtitle {
-            left: -40px;
+            left: -50px;
         }
         &__btns {
-            left: -40px;
+            left: -65px;
         }
     }
 }
