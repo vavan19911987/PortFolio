@@ -25,13 +25,14 @@ window.addEventListener('DOMContentLoaded', function () {
         });
     }
     const hamburger = document.querySelector('.hamburger'),
-          menu = document.querySelector('.menu'),
-          close = document.querySelector('.menu__close'),
-          arrowUp = document.querySelector('.arrow-up'),
-          arrowDown = document.querySelector('.arrow-down'),
-          containers = document.querySelector('.nones'),
-          sidepanel = document.querySelector('.sidepanel'),
-          hamburgers = document.querySelector('.hamburger');
+        menu = document.querySelector('.menu'),
+        close = document.querySelector('.menu__close'),
+        arrowUp = document.querySelector('.arrow-up'),
+        arrowDown = document.querySelector('.arrow-down'),
+        containers = document.querySelector('.nones'),
+        sidepanel = document.querySelector('.sidepanel'),
+        hamburgers = document.querySelector('.hamburger'),
+        menuNone = document.querySelectorAll('.menu__link > a');
 
     hamburger.addEventListener('click', function () {
         menu.classList.add('active');
@@ -51,8 +52,16 @@ window.addEventListener('DOMContentLoaded', function () {
         hamburgers.classList.remove('none');
     });
 
-    
-
+    for (let i = 0; i < menuNone.length; i++) {
+        menuNone[i].addEventListener('click', function () {
+            menu.classList.remove('active');
+            arrowUp.classList.remove('none');
+            arrowDown.classList.remove('none');
+            containers.classList.remove('none');
+            sidepanel.classList.remove('none');
+            hamburgers.classList.remove('none');
+        });
+    }
 
 });
 
