@@ -2,16 +2,16 @@ window.addEventListener('DOMContentLoaded', function () {
 
 
     // смена цвета к иконок соцсети
-    let color = document.querySelectorAll('.colors');
+    // let color = document.querySelectorAll('.colors');
 
-    for (let i = 0; i < color.length; i++) {
-        color[i].addEventListener('mouseover', function () {
-            this.setAttribute("style", "color:green;");
-        });
-        color[i].addEventListener('mouseout', function () {
-            this.setAttribute("style", "color:white;");
-        });
-    }
+    // for (let i = 0; i < color.length; i++) {
+    //     color[i].addEventListener('mouseover', function () {
+    //         this.setAttribute("style", "color:green;");
+    //     });
+    //     color[i].addEventListener('mouseout', function () {
+    //         this.setAttribute("style", "color:black;");
+    //     });
+    // }
 
     // сьена цвета кнопки
     let btn = document.querySelectorAll('.btn');
@@ -65,9 +65,42 @@ window.addEventListener('DOMContentLoaded', function () {
             containers.classList.remove('none');
             sidepanel.classList.remove('none');
             hamburgers.classList.remove('none');
+
         });
     }
+const sidepanelscroll = document.querySelector('.sidepanel');
+const divider = document.querySelector('.sidepanel__divider');
+const vk = document.querySelector('.icon-vk1');
+const instagram = document.querySelector('.icon-instagram');
+const whatsapp = document.querySelector('.icon-whatsapp');
 
+    if (sidepanelscroll) {
+        sidepanelscroll.addEventListener('click', function name() {
+            window.scrollTo({
+                top: 100,
+                behavior: 'smooth',
+            });
+        });
+
+        window.addEventListener('scroll', function () {
+            const scrolled = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (scrolled >= 445) {
+                sidepanelscroll.classList.add('sidepanels');
+                divider.classList.add('dividers');
+                vk.classList.add('icon-vk2');
+                instagram.classList.add('icon-instagram2');
+                whatsapp.classList.add('icon-whatsapp2');
+            } else {
+                sidepanelscroll.classList.remove('sidepanels');
+                divider.classList.remove('dividers');
+                vk.classList.remove('icon-vk2');
+                instagram.classList.remove('icon-instagram2');
+                whatsapp.classList.remove('icon-whatsapp2');
+
+            }
+        });
+    }
 
 
 
