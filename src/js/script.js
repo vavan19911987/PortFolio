@@ -32,9 +32,12 @@ window.addEventListener('DOMContentLoaded', function () {
         containers = document.querySelector('.nones'),
         sidepanel = document.querySelector('.sidepanel'),
         hamburgers = document.querySelector('.hamburger'),
-        menuNone = document.querySelectorAll('.menu__link > a');
+        menuNone = document.querySelectorAll('.menu__link > a'),
+        bodys = document.querySelector('body');
+
 
     hamburger.addEventListener('click', function () {
+        bodys.setAttribute("style", "overflow:hidden;");
         menu.classList.add('active');
         arrowUp.classList.add('none');
         arrowDown.classList.add('none');
@@ -44,6 +47,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
     });
     close.addEventListener('click', function () {
+        bodys.setAttribute("style", "overflow:none;");
         menu.classList.remove('active');
         arrowUp.classList.remove('none');
         arrowDown.classList.remove('none');
@@ -54,6 +58,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
     for (let i = 0; i < menuNone.length; i++) {
         menuNone[i].addEventListener('click', function () {
+            bodys.setAttribute("style", "overflow:none;");
             menu.classList.remove('active');
             arrowUp.classList.remove('none');
             arrowDown.classList.remove('none');
@@ -62,6 +67,10 @@ window.addEventListener('DOMContentLoaded', function () {
             hamburgers.classList.remove('none');
         });
     }
+
+
+
+
 
 });
 
