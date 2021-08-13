@@ -135,3 +135,12 @@
         transform: rotate(45deg) translate(20px, 20px);
     }
 }
+
+@keyframes rights {
+    0% {
+        width: 0%;
+    }
+    100% {
+        wudth: 100%;
+    }
+}
