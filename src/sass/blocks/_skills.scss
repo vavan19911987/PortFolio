@@ -58,11 +58,7 @@
             justify-content: space-between;
             align-content: space-between;
         }
-        &-title {
-            position: relative;
-            padding: 1.8px 0 0 16px;
-            @include before_circle;
-        }
+
         &-counter {
             font-size: 14px;
             line-height: 21px;
@@ -81,21 +77,10 @@
                 height: 100%;
                 background: linear-gradient(45deg, rgb(40, 249, 4), rgb(0, 128, 0));
                 border-radius: 4px;
-                animation: rights 3.5s linear;
-                span::before {
-                    content: '';
-                    box-shadow: 0 -200px 100px -120px crimson inset;
-                    animation: background 3s infinite alternate;
-    
-                }
+                animation: rights 2s linear;
             }
+            
         }
     }
 }
 
-@keyframes background {
-    50% {
-        background: skyblue;
-        box-shadow: 0 -200px 100px -100px yellowgreen inset;
-    }
-}
